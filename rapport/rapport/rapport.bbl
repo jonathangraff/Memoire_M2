@@ -1,0 +1,64 @@
+\begin{thebibliography}{10}
+
+\bibitem{icube}
+Icube.
+\newblock Présentation d'icube.
+\newblock https://icube.unistra.fr/.
+
+\bibitem{nblignescode}
+Gabriel Dabi-Schwebel.
+\newblock Combien de lignes de code par application ?
+\newblock
+  https://www.1min30.com/developpement-web/combien-de-lignes-de-code-par-application-infographie-7627,
+  18 Décembre 2013.
+
+\bibitem{ariane}
+Wikipédia.
+\newblock Vol 501 d'ariane 5.
+\newblock https://fr.wikipedia.org/wiki/Vol\_501\_d%27Ariane\_5.
+
+\bibitem{Dorst}
+Leo Dorst.
+\newblock {\em Geometric Algebra}.
+\newblock 2000.
+
+\bibitem{Thery}
+Laurent Fuchs and Laurent Théry.
+\newblock A formalization of grassmann-cayley algebra in coq and its
+  application to theorem proving in projective geometry.
+\newblock Janvier 2012.
+
+\bibitem{Dietmar}
+Dietmar Hildenbrand.
+\newblock {\em Foundations of Geometric Algebra Computing}.
+\newblock 2013.
+
+\bibitem{alggeom}
+Wikipédia.
+\newblock Algèbre géométrique (structure).
+\newblock
+  https://fr.wikipedia.org/wiki/Alg%C3%A8bre_g%C3%A9om%C3%A9trique_%28structure%29.
+
+\bibitem{a}
+Eduardo Bayro-Corrochano and Julio Zamora-Esquivel.
+\newblock Differential and inverse kinematics of robot devices using conformal
+  geometric algebra.
+\newblock Août 2006.
+
+\bibitem{b}
+A.~Kleppe and O.~Egeland.
+\newblock Inverse kinematics for industrial robots using conformal geometric
+  algebra.
+\newblock 2016.
+
+\bibitem{c}
+Li-Ming Li, Zhi-Ping Shi, and Yong-Dong Li.
+\newblock Formalization of geometric algebra in hol light.
+\newblock Novembre 2018.
+
+\bibitem{d}
+Reynald Affeldt and Cyril Cohen.
+\newblock Formal foundations of 3d geometry to model robot manipulators.
+\newblock 2017.
+
+\end{thebibliography}

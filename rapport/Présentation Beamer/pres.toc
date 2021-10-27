@@ -1,0 +1,19 @@
+\beamer@sectionintoc {1}{Introduction - Contexte }{2}{0}{1}
+\beamer@subsectionintoc {1}{1}{Les logiciels assistants de preuve}{8}{0}{1}
+\beamer@subsectionintoc {1}{2}{Les alg\IeC {\`e}bres g\IeC {\'e}om\IeC {\'e}triques}{15}{0}{1}
+\beamer@sectionintoc {2}{Les alg\IeC {\`e}bres g\IeC {\'e}om\IeC {\'e}triques}{21}{0}{2}
+\beamer@subsectionintoc {2}{1}{Multivecteurs}{21}{0}{2}
+\beamer@subsectionintoc {2}{2}{Interpr\IeC {\'e}tation g\IeC {\'e}om\IeC {\'e}trique des bivecteurs}{29}{0}{2}
+\beamer@subsectionintoc {2}{3}{Egalit\IeC {\'e} des bivecteurs}{35}{0}{2}
+\beamer@subsectionintoc {2}{4}{Addition de bivecteurs}{38}{0}{2}
+\beamer@subsectionintoc {2}{5}{Trivecteurs}{42}{0}{2}
+\beamer@subsectionintoc {2}{6}{Lames - multivecteurs}{43}{0}{2}
+\beamer@subsectionintoc {2}{7}{R\IeC {\'e}version, inverse et dual}{47}{0}{2}
+\beamer@sectionintoc {3}{Alg\IeC {\`e}bre g\IeC {\'e}om\IeC {\'e}trique conforme (CGA)}{51}{0}{3}
+\beamer@subsectionintoc {3}{1}{Pr\IeC {\'e}sentation}{51}{0}{3}
+\beamer@sectionintoc {4}{Le logiciel Coq}{61}{0}{4}
+\beamer@sectionintoc {5}{Robots en alg\IeC {\`e}bres g\IeC {\'e}om\IeC {\'e}triques en Coq}{62}{0}{5}
+\beamer@subsectionintoc {5}{1}{Alg\IeC {\`e}bres g\IeC {\'e}om\IeC {\'e}triques conformes}{62}{0}{5}
+\beamer@subsectionintoc {5}{2}{Cin\IeC {\'e}matique directe}{69}{0}{5}
+\beamer@subsectionintoc {5}{3}{Cin\IeC {\'e}matique indirecte}{75}{0}{5}
+\beamer@sectionintoc {6}{Conclusion}{89}{0}{6}

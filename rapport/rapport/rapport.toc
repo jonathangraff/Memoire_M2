@@ -1,0 +1,37 @@
+\contentsline {section}{\numberline {}Remerciements}{2}%
+\contentsline {section}{\numberline {I)}Introduction}{3}%
+\contentsline {subsection}{\numberline {I.1)}Présentation de la structure}{3}%
+\contentsline {subsection}{\numberline {I.2)}Contexte}{3}%
+\contentsline {subsubsection}{Algèbres géométriques}{3}%
+\contentsline {subsubsection}{Assistant de preuve}{4}%
+\contentsline {subsection}{\numberline {I.3)}Objectifs}{4}%
+\contentsline {section}{\numberline {II)}Les algèbres géométriques}{5}%
+\contentsline {subsection}{\numberline {II.1)}Présentation générale}{5}%
+\contentsline {subsubsection}{Définitions}{5}%
+\contentsline {subsubsection}{Bivecteurs - Interprétation géométrique}{6}%
+\contentsline {subsubsection}{Egalité de bivecteurs}{7}%
+\contentsline {subsubsection}{Somme de bivecteurs}{8}%
+\contentsline {subsubsection}{Lames et multivecteurs}{8}%
+\contentsline {subsubsection}{Réversion et inverse}{9}%
+\contentsline {subsubsection}{Dual d'un multivecteur}{9}%
+\contentsline {subsection}{\numberline {II.2)}Algèbre géométrique conforme (CGA)}{10}%
+\contentsline {subsubsection}{Présentation}{10}%
+\contentsline {subsubsection}{Image d'un point en CGA}{10}%
+\contentsline {subsubsection}{Normalisation}{11}%
+\contentsline {subsubsection}{Objets géométriques en CGA - Représentations IPNS et OPNS}{12}%
+\contentsline {subsubsection}{Transformations : réflexions, rotations et translations}{13}%
+\contentsline {section}{\numberline {III)}L'assistant de preuve Coq}{15}%
+\contentsline {subsection}{\numberline {III.1)}Présentation}{15}%
+\contentsline {subsection}{\numberline {III.2)}Exemple}{16}%
+\contentsline {section}{\numberline {IV)}Implémentation de mouvements de robots à l'aide des algèbres géométriques en Coq}{20}%
+\contentsline {subsection}{\numberline {IV.1)}Algèbres Géométriques Conformes}{20}%
+\contentsline {subsection}{\numberline {IV.2)}Cinématique directe}{22}%
+\contentsline {subsubsection}{Robot RRP}{22}%
+\contentsline {subsubsection}{Robot SCARA }{26}%
+\contentsline {subsubsection}{Robot 6R }{28}%
+\contentsline {subsubsection}{Conclusion }{31}%
+\contentsline {subsection}{\numberline {IV.3)}Cinématique inverse}{31}%
+\contentsline {subsubsection}{Robot SCARA}{33}%
+\contentsline {section}{\numberline {V)}Conclusion}{36}%
+\contentsline {subsection}{\numberline {V.1)}Synthèse}{36}%
+\contentsline {subsection}{\numberline {V.2)}Difficultés rencontrées - Perspectives }{36}%

@@ -1,0 +1,3 @@
+
+$Definition LineOPNS (p1 p2 : point) := OPNS(Point2CGA p1 ∨ Point2CGA p2 ∨ e_inf).$
+

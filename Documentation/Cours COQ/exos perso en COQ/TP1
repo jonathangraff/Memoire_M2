@@ -1,0 +1,126 @@
+Lemma ex10  : forall A B C: Prop, 
+((A->B) /\(B->C))->(A ->C).
+Proof.
+intros.
+destruct H as [H1 H2].
+apply H2;apply H1; apply H0.
+Qed.
+
+Lemma ex11 : forall A B : Prop, A\/B->B\/A.
+Proof.
+intros.
+destruct H as [H1|H2].
+right. exact H1.
+left. exact H2.
+Qed.
+
+Lemma ex12 : forall A B C : Prop, ((A/\B)->C)
+->A->B ->C.
+Proof.
+intros.
+apply H.
+split.
+exact H0.
+exact H1.
+Qed.
+
+Lemma ex13 : forall A B C : Prop, (A->B->C)
+->(A/\B)->C.
+Proof.
+intros.
+apply H.
+destruct H0 as [H2 _].
+exact H2.
+destruct H0 as [_ H3].
+exact H3.
+Qed.
+
+Lemma ex14 : forall A B C : Prop, (A/\(B\/C))->
+((A/\B)\/(A/\C)).
+Proof.
+intros.
+destruct H as [H1 H2].
+destruct H2 as [H3 | H4].
+left.
+split.
+exact H1.
+exact H3.
+right.
+split. exact H1. 
+exact H4.
+Qed.
+
+Lemma ex15 : forall A B C : Prop, ((A/\B)\/(A/\C))
+->(A/\(B\/C)).
+Proof.
+intros.
+split. 
+destruct H as [H1|H2].
+destruct H1 as [H11 H12].
+exact H11.
+destruct H2 as [H21 _].
+exact H21.
+destruct H as [H1|H2].
+destruct H1 as [H11 H12].
+left.
+exact H12.
+destruct H2 as [H21 H22].
+right.
+exact H22.
+Qed.
+
+Print ex10.
+
+Axiom tiers_exclu : forall A: Prop, A\/~A.
+
+Lemma Contraposée : forall A B : Prop, (A->B)<->(~B->~A).
+Proof.
+intros.
+split.
+intros.
+intro.
+absurd B.
+exact H0.
+apply H.
+exact H1.
+intros. 
+destruct (tiers_exclu B).
+exact H1.
+absurd A.
+apply H.
+exact H1.
+exact H0.
+Qed.
+
+Lemma DoubleNégation : forall A : Prop, ~~A -> A.
+Proof.
+intros.
+destruct (tiers_exclu A).
+exact H0.
+absurd (~A).
+exact H.
+exact H0.
+Qed.
+
+Lemma Pierce : forall A B : Prop, ((A->B)->A)->A.
+Proof.
+intros. 
+destruct (tiers_exclu A).
+exact H0.
+apply H. 
+intro.
+absurd A.
+exact H0.
+exact H1.
+Qed.
+
+Lemma ex4 : forall (A : Set) (B : A -> A -> 
+Prop), (exists y : A, 
+(forall x : A, B x y)) -> 
+(forall x : A, exists y : A, B x y).
+Proof.
+intros.
+destruct H.
+exists x0.
+apply H.
+Qed.

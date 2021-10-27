@@ -1,0 +1,154 @@
+Require Import ZArith.
+Open Scope Z_scope.
+
+Inductive gauss : Type :=g (a b :Z).
+
+Definition g0 : gauss := g 0 0.
+
+Definition a h:Z :=
+match h with
+g a b =>a
+end.
+
+Definition b h:Z :=
+match h with
+g a b =>b
+end.
+
+Definition addition (h k : gauss): 
+gauss :=g (a h + a k) (b h + b k).
+
+Definition multiplication (h k : gauss):gauss :=
+g(a h* a k-b h*b k) (a h*b k+b h*a k).
+
+Lemma sum0 : forall g:gauss, addition g0 g = g.
+Proof.
+intros g2.
+unfold addition.
+unfold g0.
+destruct g2.
+unfold a;unfold b.
+simpl.
+tauto.
+Qed.
+
+Lemma Zplus_comm : forall h k : gauss, 
+addition h k = addition k h.
+Proof. 
+intros.
+destruct h;destruct k.
+unfold addition.
+unfold a; unfold b.
+rewrite Z.add_comm.
+rewrite Z.add_comm with (n:=b1).
+tauto.
+Qed.
+
+Lemma Zplus_asso: forall h k l : gauss, 
+addition (addition h k) l = addition h (addition k l).
+Proof. 
+intros.
+destruct h;destruct k; destruct l.
+unfold addition.
+unfold a; unfold b.
+rewrite Z.add_assoc.
+rewrite Z.add_assoc with (n:=b0).
+tauto.
+Qed.
+
+Lemma Zmult_comm : forall h k : gauss, 
+multiplication h k = multiplication k h.
+Proof. 
+intros.
+destruct h;destruct k.
+unfold multiplication.
+unfold a; unfold b.
+rewrite Z.mul_comm.
+rewrite Z.mul_comm with (n:=b1).
+rewrite Z.mul_comm with (n:=a1)(m:=b0).
+rewrite Z.mul_comm with (n:=b1)(m:=a0).
+rewrite Z.add_comm with (n:=b0*a1).
+
+tauto.
+Qed.
+
+
+
+
+Inductive semaine:=
+lundi
+|mardi
+|mercredi
+|jeudi
+|vendredi
+|samedi
+|dimanche.
+
+Definition jour_suivant j:semaine :=
+match j with 
+lundi=>mardi
+|mardi => mercredi
+|mercredi => jeudi
+|jeudi => vendredi
+|vendredi => samedi
+|samedi => dimanche
+|dimanche => lundi
+end.
+Eval compute in jour_suivant(mardi).
+
+Definition jour_precedent j: semaine :=
+iter 6 semaine jour_suivant j.
+Eval compute in jour_precedent(dimanche).
+
+Lemma id1 : forall j :semaine, 
+jour_suivant(jour_precedent j )=j.
+Proof.
+intros.
+case j;
+reflexivity.
+Qed.
+
+Lemma id2 : forall j :semaine, 
+jour_precedent(jour_suivant j )=j.
+Proof.
+intros.
+case j;reflexivity.
+Qed.
+
+Fixpoint iter {A:Set} (n:nat) (f:A->A) (x:A) :=
+match n with 
+O=> x
+|S p => f (iter p f x)
+end.
+Check iter.
+
+Eval compute in iter 7 jour_suivant lundi.
+
+Lemma iteration : forall j : semaine, iter 7 
+ jour_suivant j = j.
+Proof.
+intros.
+case j;reflexivity.
+Qed.
+Lemma iteration2 : forall j : semaine, iter 7 
+semaine jour_precedent j = j.
+Proof.
+intros.
+case j.
+simpl; tauto.
+simpl; tauto.
+simpl; tauto.
+simpl; tauto.
+simpl; tauto.
+simpl; tauto.
+simpl; tauto.
+Qed.
+
+(* Check let f:=fun x:Z=>(iter x semaine lundi) in f 3.
+ *)
+Lemma iteration3 : forall (n m :Z) 
+(f:semaine->semaine) (j:semaine), 
+iter (n+m) semaine f j = iter n semaine f(iter m semaine f j).
+
+
+
