@@ -1,0 +1,1 @@
+Mon stage de Master 2 portait sur l'utilisation de logiciels d'assistant de preuve (Coq) pour prouver formellement les déplacements de bras de robots. Utilisation des algèbres géométriques pour pouvoir formaliser les déplacements.
